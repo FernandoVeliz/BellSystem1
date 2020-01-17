@@ -1,5 +1,5 @@
 <menu>
-	<page url="index.php">Home</page>
+	<page url="index.php">Inicio</page>
 	<page url="schedules.php">Schedules</page>
 	<page url="calendar.php">Calendar</page>
 	<page url="settings.php">Settings</page>
