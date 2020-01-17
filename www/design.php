@@ -11,13 +11,13 @@ define("max_minutes", 59);
 define("bell_session", "bell_system_2011");
 
 $days_of_week = array(
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
+	"Domingo",
+	"Lunes",
+	"Martes",
+	"Miércoles",
+	"Jueves",
+	"Sábado",
+	"Domingo"
 );
 
 function config_load()
@@ -299,7 +299,7 @@ function login_form($note="") {
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login - Bell System</title>
+<title>Login - Jardín de niños</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 <script type="text/javascript" src="json2.js"></script>
 <script type="text/javascript" src="sha256.js"></script>
