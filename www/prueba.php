@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+require_once "design.php";
+site_header("Home");
+?>
+<noscript>
+<div class="red"><b>WARNING:</b> You don't have Javascript enabled! Please do not use this Web UI until you enable it; otherwise, you may end up with a corrupt XML file.</div>
+<br />
+</noscript>
+
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -24,7 +32,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <img src="/w3images/avatar_smoke.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
+    <p>INICIO</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
@@ -43,7 +51,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
@@ -54,8 +62,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-    <p>Photographer and Web Designer.</p>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Jardín de niños</span> Ninfa Gutiérrez de Solís.</h1>
+    <p>Control de timbre.</p>
     <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
@@ -222,3 +230,4 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 </body>
 </html>
+<?php site_footer(); ?>
