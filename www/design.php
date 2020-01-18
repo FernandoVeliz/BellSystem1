@@ -136,7 +136,7 @@ EOF;
 function saved($bool)
 {
 	echo '<input type="submit" name="save" class="save" value="Guardar" onclick="window.needToConfirm=false" />';
-	if ($bool) echo "<div class='saved' id='saved'>Guardado exitosamente/div>";
+	if ($bool) echo "<div class='saved' id='saved'>Guardado exitosamente</div>";
 	else	   echo "<div class='saved' id='saved' style=\"display:none\">Guardado exitosamente</div>";
 }
 
