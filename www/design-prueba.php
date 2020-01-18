@@ -1,5 +1,4 @@
 <?php
-$name        = "Control de timbre";
 $root        = getcwd() . DIRECTORY_SEPARATOR;
 $menu_file   = $root . "menu.xml";
 $config_file = $root . "config.xml";
