@@ -523,7 +523,7 @@ foreach ($overrides as $id => $override)
 </script>
 <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 <?php echo saved($saved); ?>
-<div class="section">Default Schedule</div>
+<div class="section">Horario predeterminado</div>
 <table>
 <?php
 foreach ($days_of_week as $key=>$dow)
@@ -541,12 +541,12 @@ foreach ($days_of_week as $key=>$dow)
 </table>
 <br />
 
-<div class="section">Quiet Periods &ndash; <a href="javascript:void(0)" onclick="return add_quiet()" title="Turn the bells off on a certain day">Add</a></div>
+<div class="section">Días sin timbre &ndash; <a href="javascript:void(0)" onclick="return add_quiet()" title="Desactiva el timbre los días especificados">Agregar</a></div>
 <ul id="quiets">
 <?php print_whens("quiet", $quiets); ?>
 </ul><br />
 
-<div class="section">Override Schedules &ndash; <a href="javascript:void(0)" onclick="return add_override()" title="Use a different schedule on a certain day">Add</a></div>
+<div class="section">Sobreescribir horario &ndash; <a href="javascript:void(0)" onclick="return add_override()" title="Utiliza un horario diferente en los días especificados">Agregar</a></div>
 <ul id="overrides">
 <?php print_whens("override", $overrides); ?>
 </ul>
@@ -555,32 +555,32 @@ foreach ($days_of_week as $key=>$dow)
 	<div id="box">
 		<table>
 		<tr>
-			<td class="section" colspan="5">Time</td>
+			<td class="section" colspan="5">Hora</td>
 		</tr>
 		<tr>
-			<td class="head">Start date</td>
+			<td class="head">Fecha del inicio</td>
 			<td><input type="text" name="start" id="start" value="" /></td>
 			<td class="middle_horizontal"></td>
-			<td class="head">Start time<sup>2</sup></td>
+			<td class="head">Hora de inicio<sup>2</sup></td>
 			<td><?php time_select("_start"); ?></td>
 		</tr>
 		<tr>
-			<td class="head">End date<sup>1</sup></td>
+			<td class="head">Fecha del final<sup>1</sup></td>
 			<td><input type="text" name="end" id="end" value="" /></td>
 			<td class="middle_horizontal"></td>
-			<td class="head">End time<sup>2</sup></td>
+			<td class="head">Hora de final<sup>2</sup></td>
 			<td><?php time_select("_end", max_hours, max_minutes); ?></td>
 		</tr>
 		<tr>
 			<td class="middle_vertical"></td>
 		</tr>
 		<tr id="exec_head">
-			<td class="section" colspan="5">Schedule</td>
+			<td class="section" colspan="5">Horario</td>
 		</tr>
 		<tr id="exec_section">
 			<td colspan="5">
 			<select name="exec" width="300" style="width:300px">
-				<option value=''>Please select one</option>
+				<option value=''>Favor de seleccionar un horario</option>
 				<?php
 				for ($i=0; $i<count($schedules); ++$i)
 					echo "\t<option value='{$schedules[$i][0]}'>{$schedules[$i][1]}</option>\n\t";
@@ -591,12 +591,12 @@ foreach ($days_of_week as $key=>$dow)
 		</table>
 
 		<div class="note">
-			<sup>1</sup> Don't specify if this is for a single day.<br />
-			<sup>2</sup> The time during <i>each</i> of the selected days.
+			<sup>1</sup> No es necesario si se trata de un solo día.<br />
+			<sup>2</sup> La hora durante <i>cada uno</i> de los días seleccionados.
 		</div>
 		<div class="buttons">
-			<input type="submit" class="buttons" value="Okay" onclick="return box_save()" />
-			<input type="submit" class="buttons" value="Cancel" onclick="return box_cancel()" />
+			<input type="submit" class="buttons" value="Aceptar" onclick="return box_save()" />
+			<input type="submit" class="buttons" value="Cancelar" onclick="return box_cancel()" />
 		</div>
 	</div>
 </div>
