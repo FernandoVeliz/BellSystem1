@@ -3,11 +3,11 @@ require_once "design.php";
 site_header("Home");
 ?>
 <noscript>
-<div class="red"><b>WARNING:</b> You don't have Javascript enabled! Please do not use this Web UI until you enable it; otherwise, you may end up with a corrupt XML file.</div>
+<div class="red"><b>ADVERTENCIA:</b> Javascript no se encuentra activado. Favor de activarlo para evitar fallas en el sistema.</div>
 <br />
 </noscript>
 
-Welcome to the Bell System Web <abbr title="User Interface">UI</abbr>. Si esta es la primera vez que visita el sitio, vaya en orden por cada una de las categorías para configurar el timbre.
+Bienvenido al interfaz del timbre. <abbr title="User Interface">UI</abbr>. Se recomienda que vaya en orden por cada una de las categorías para configurar el timbre correctamente.
 <br /><br />
 <ul>
 <li><b>Horarios</b> &mdash; Crea horarios que hacen sonar el timbre en una hora específica</li>
