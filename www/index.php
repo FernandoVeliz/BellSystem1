@@ -7,6 +7,7 @@ site_header("Home");
 <br />
 </noscript>
 
+<h1>Jardín de niños Ninfa Gutiérrez de Solís.</h1><br>
 Bienvenido al interfaz del timbre. Se recomienda que visite cada una de las categorías en orden para configurar el timbre correctamente.
 <br /><br />
 <ul>
