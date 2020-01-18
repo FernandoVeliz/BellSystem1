@@ -112,7 +112,7 @@ function check() {
 		<input type="text" name="end" id="end" value="<?php echo from_date($end, "Y/m/d"); ?>" />
 	</td>
 </tr><tr>
-	<td class="head">Duración</td>
+	<td class="head">Duración del timbre</td>
 	<td><select name="length" onchange="window.needToConfirm=true"><?php
 		for ($i = min_length; $i <= max_length; ++$i)
 			echo "<option value='$i'" . (($i==$length)?" selected=\"selected\"":"") . ">$i</option>";
