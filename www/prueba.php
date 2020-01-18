@@ -73,7 +73,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Control de timbre</h2>
+    <h2 class="w3-text-black">Control de timbre</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Bienvenido al interfaz del timbre. Se recomienda que visite cada una de las categorías en orden para configurar el timbre correctamente.</p><br>
 	<ul>
