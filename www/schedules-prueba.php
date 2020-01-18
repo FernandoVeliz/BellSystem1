@@ -278,7 +278,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="far fa-clock w3-xxlarge"></i>
     <p>HORARIOS</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+  <a href="calendar-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="far fa-calendar-alt w3-xxlarge"></i>
     <p>CALENDARIO</p>
   </a>

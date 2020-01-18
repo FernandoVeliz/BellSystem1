@@ -32,6 +32,7 @@ div.menu a {
 div.content {
 	padding:25px;
 	padding-top:25px;
+	margin-left: 100px;
 }
 td.head {
 	font-size:13pt;
