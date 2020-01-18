@@ -405,7 +405,7 @@ function add_quiet() {
 		return function() { return remove_item("quiet_" + id + "_div"); }
 	})(id)
 	del.innerHTML = "x "
-	del.title = "Delete"
+	del.title = "Borrar"
 
 	link = document.createElement('a')
 	div.appendChild(link)
@@ -416,7 +416,7 @@ function add_quiet() {
 		return function() { return box_open("quiet_" + id); }
 	})(id)
 	link.innerHTML = print_date(true)
-	link.title = "Click to modify"
+	link.title = "Haga click para modificar"
 	
 	$(link).fancybox({
 		'titlePosition'         : 'inside',
@@ -457,7 +457,7 @@ function add_override() {
 		return function() { return remove_item("override_" + id + "_div"); }
 	})(id)
 	del.innerHTML = "x "
-	del.title = "Delete"
+	del.title = "Borrar"
 
 	link = document.createElement('a')
 	div.appendChild(link)
@@ -467,8 +467,8 @@ function add_override() {
 	link.onclick = (function(id){
 		return function() { return box_open("override_" + id); }
 	})(id)
-	link.innerHTML = "<span>unknown</span> &ndash; " + print_date(true)
-	link.title = "Click to modify"
+	link.innerHTML = "<span>Horario no especificado</span> &ndash; " + print_date(true)
+	link.title = "Haga click para modificar"
 	
 	$(link).fancybox({
 		'titlePosition'         : 'inside',
