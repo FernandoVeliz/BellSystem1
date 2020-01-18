@@ -1,3 +1,7 @@
+<?php
+require_once "design-prueba.php";
+site_header("Home");
+?>
 <noscript>
 <div class="red"><b>WARNING:</b> You don't have Javascript enabled! Please do not use this Web UI until you enable it; otherwise, you may end up with a corrupt XML file.</div>
 <br />
@@ -24,23 +28,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>INICIO</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>HORARIOS</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+    <p>CALENDARIO</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+    <p>OPCIONES</p>
   </a>
 </nav>
 
