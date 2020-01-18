@@ -173,7 +173,7 @@ function add_schedule() {
 	namediv.appendChild(input)
 	input.type = "text"
 	input.name = "name[" + id + "]"
-	input.title = "Name of this schedule"
+	input.title = "Nombre del horario"
 
 	remove = document.createElement('a')
 	namediv.appendChild(remove)
@@ -182,7 +182,7 @@ function add_schedule() {
 		return function() { return remove_schedule(id); }
 	})(id)
 	remove.innerHTML = " x"
-	remove.title = "Delete this schedule"
+	remove.title = "Borrar este horario"
 	
 	times = document.createElement('div')
 	schedule.appendChild(times)
@@ -203,7 +203,7 @@ function add_schedule() {
 		return function() { return add_time(id); }
 	})(id)
 	link.innerHTML = "+"
-	link.title = "Add a time to this schedule"
+	link.title = "Agregar una hora al horario"
 
 	$(function() {
 		$( "#sortable_" + id ).sortable();
