@@ -1,7 +1,3 @@
-<?php
-require_once "design.php";
-site_header("Home");
-?>
 <noscript>
 <div class="red"><b>WARNING:</b> You don't have Javascript enabled! Please do not use this Web UI until you enable it; otherwise, you may end up with a corrupt XML file.</div>
 <br />
