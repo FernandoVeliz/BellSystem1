@@ -243,7 +243,7 @@ echo <<<EOF
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>$title</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-	<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="style-prueba.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="jsDatePick_ltr.min.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="fancybox/jquery.fancybox-1.3.4.css" />
 	<script type="text/javascript" src="jsDatePick.min.1.3.js"></script>
