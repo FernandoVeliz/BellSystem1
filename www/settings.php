@@ -102,29 +102,29 @@ function check() {
 <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" onsubmit="return check()">
 <?php echo saved($saved); ?>
 <table><tr>
-	<td class="head">School Start<sup>1</sup></td>
+	<td class="head">Inicio de periodo escolar<sup>1</sup></td>
 	<td>
 		<input type="text" name="start" id="start" value="<?php echo from_date($start, "Y/m/d"); ?>" />
 	</td>
 </tr><tr>
-	<td class="head">School End<sup>1</sup></td>
+	<td class="head">Fin de periodo escolar<sup>1</sup></td>
 	<td>
 		<input type="text" name="end" id="end" value="<?php echo from_date($end, "Y/m/d"); ?>" />
 	</td>
 </tr><tr>
-	<td class="head">Length</td>
+	<td class="head">Duración</td>
 	<td><select name="length" onchange="window.needToConfirm=true"><?php
 		for ($i = min_length; $i <= max_length; ++$i)
 			echo "<option value='$i'" . (($i==$length)?" selected=\"selected\"":"") . ">$i</option>";
-	?></select> seconds</td>
+	?></select> segundos</td>
 </tr><tr>
-	<td class="head">Device<sup>2</sup></td>
+	<td class="head">Dispositivo<sup>2</sup></td>
 	<td><input type="text" name="device" value="<?php echo $device; ?>" disabled="disabled" /></td>
 </tr><tr>
-	<td class="head">Command<sup>2</sup></td>
+	<td class="head">Comando<sup>2</sup></td>
 	<td><input type="text" name="command" value="<?php echo htmlentities($command); ?>" disabled="disabled" /></td>
 </tr><tr>
-	<td class="head">Method:</td>
+	<td class="head">Método:</td>
 	<td><select name="method" onchange="window.needToConfirm=true"/>
 	  <?php echo "<option value=\"none\">None</option>" ?>
 	  <?php echo "<option value=\"gpio\" " . ($method=="gpio" ? "selected=true" : "") . ">GPIO</option>" ?>
@@ -134,7 +134,7 @@ function check() {
 </tr>
 </table><table>
 <tr>
-	<td class="head">GPIO Pin</td>
+	<td class="head">Pin GPIO</td>
 	<?php foreach (array(4, 17, 22, 23, 24, 25) as $value) {
 		echo "<td><label><input type=\"checkbox\" name=\"gpio_pin[]\" value=" . $value . " " . (in_array($value, explode(",",$gpio_pin)) ? "checked" : "" ) . ">" . $value . "</label></td>";
 	}
@@ -146,7 +146,7 @@ function check() {
 
 <br />
 <p>
-<sup>1</sup> The bell system will be enabled between these dates.<br />
-<sup>2</sup> This is for reference; you can't change this from this web UI. Edit the XML config file by hand.
+<sup>1</sup> El sistema del timbre estará activado entre estas fechas.<br />
+<sup>2</sup> Esto es solo para referencia; no puede cambiar estos valores desde el interfaz web. Edite manualmente el archivo XML, contacte a un administrador.
 </p>
 <?php site_footer(); ?>
