@@ -6,13 +6,13 @@ $error = "";
 define("MAX_SIZE", 1048576);
 
 $error_messages = array(
-	1=>'The uploaded file exceeds the upload_max_filesize directive in php.ini.',
-	2=>'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.',
-	3=>'The uploaded file was only partially uploaded.',
-	4=>'No file was uploaded.',
-	6=>'Missing a temporary folder.',
-	7=>'Failed to write file to disk.',
-	8=>'A PHP extension stopped the file upload.'
+	1=>'El archivo subido excede el tamaño especificado en max_filesize en php.ini.', 
+	2=>'El archivo subido excede el tamaño MAX_FILE_SIZE especificado en el formulario HTML.', 
+	3=>'Solo se subió parcialmente el archivo.',
+	4=>'No se subió ningún archivo.',
+	6=>'Falta una carpeta temporal.',
+	7=>'Error al grabar archivo en la unidad de almacenamiento.',
+	8=>'Una extensión PHP detuvo la subida del archivo.'
 ); 
 
 if (isset($_REQUEST['backup']))
@@ -56,11 +56,11 @@ window.onload = function() {
 <form enctype="multipart/form-data" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 <?php echo saved($saved); ?>
 
-<div class="section">Backup</div>
-<a href="<?php echo $_SERVER["PHP_SELF"]; ?>?backup">Download Config</a>
+<div class="section">Respaldo de configuración</div>
+<a href="<?php echo $_SERVER["PHP_SELF"]; ?>?backup">Descargar archivo de configuración</a>
 <br /><br />
 
-<div class="section">Restore</div>
+<div class="section">Restaurar configuración</div>
 <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo MAX_SIZE; ?>" />
 <input type="file"   name="restore" class="file" />
 </form>
