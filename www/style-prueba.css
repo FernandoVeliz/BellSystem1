@@ -81,6 +81,7 @@ sup {
 div.saved {
 	font-style:italic;
 	color:#FF0000;
+	margin-left: 100px;
 }
 div.red {
 	color:#FF0000;
@@ -148,7 +149,7 @@ ul {
 	text-decoration:none;
 	color:#7A7A7A;
 	font-weight:bold;
-	font-size:16pt;
+	font-size:13pt;
 	vertical-align:middle;
 }
 div.schedules, div.new_schedule {
