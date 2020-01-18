@@ -13,7 +13,7 @@ site_header("Home");
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/all.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -29,27 +29,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+    <i class="fas fa-home w3-xxlarge"></i>
     <p>INICIO</p>
   </a>
   <a href="schedules.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-clock w3-xxlarge"></i>
+    <i class="far fa-clock w3-xxlarge"></i>
     <p>HORARIOS</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+    <i class="far fa-calendar-alt w3-xxlarge"></i>
     <p>CALENDARIO</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fas fa-sliders-h w3-xxlarge"></i>
     <p>OPCIONES</p>
   </a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fas fa-history w3-xxlarge"></i>
     <p>RESPALDO</p>
   </a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fas fa-door-open w3-xxlarge"></i>
     <p>SALIR</p>
   </a>
 </nav>
