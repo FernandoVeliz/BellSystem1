@@ -7,7 +7,7 @@ site_header("Home");
 <br />
 </noscript>
 
-Bienvenido al interfaz del timbre. <abbr title="User Interface">UI</abbr>. Se recomienda que vaya en orden por cada una de las categorías para configurar el timbre correctamente.
+Bienvenido al interfaz del timbre. Se recomienda que visite cada una de las categorías en orden para configurar el timbre correctamente.
 <br /><br />
 <ul>
 <li><b>Horarios</b> &mdash; Crea horarios que hacen sonar el timbre en una hora específica</li>
