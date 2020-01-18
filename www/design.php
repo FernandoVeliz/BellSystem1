@@ -1,5 +1,5 @@
 <?php
-$name        = "Bell System";
+$name        = "Control de timbre";
 $root        = getcwd() . DIRECTORY_SEPARATOR;
 $menu_file   = $root . "menu.xml";
 $config_file = $root . "config.xml";
@@ -382,13 +382,13 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<h2>Bell System Login</h2>
+<h2>Login - Jardín de niños</h2>
 <?php echo $note; ?>
 <div id="replace"></div>
 <div id="login">
-<div style='color:#FF0000; display:none;' id='invalid'>Incorrect password.<br /></div>
+<div style='color:#FF0000; display:none;' id='invalid'>Contraseña incorrecta<br /></div>
 <form action='index.php' method='post' onsubmit='login(); return false'>
-Password: <input type='password' name='pass' id='pass' />
+Contraseña: <input type='password' name='pass' id='pass' />
           <input type='submit' value='Login' />
 </form>
 </div>
