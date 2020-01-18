@@ -135,9 +135,9 @@ EOF;
 
 function saved($bool)
 {
-	echo '<input type="submit" name="save" class="save" value="Save" onclick="window.needToConfirm=false" />';
-	if ($bool) echo "<div class='saved' id='saved'>Successfully Saved</div>";
-	else	   echo "<div class='saved' id='saved' style=\"display:none\">Successfully Saved</div>";
+	echo '<input type="submit" name="save" class="save" value="Guardar" onclick="window.needToConfirm=false" />';
+	if ($bool) echo "<div class='saved' id='saved'>Guardado exitosamente/div>";
+	else	   echo "<div class='saved' id='saved' style=\"display:none\">Guardado exitosamente</div>";
 }
 
 function time_select($str="", $hour=-1, $minute=-1) {
@@ -389,7 +389,7 @@ window.onload = function() {
 <div style='color:#FF0000; display:none;' id='invalid'>Contraseña incorrecta<br /></div>
 <form action='index.php' method='post' onsubmit='login(); return false'>
 Contraseña: <input type='password' name='pass' id='pass' />
-          <input type='submit' value='Login' />
+          <input type='submit' value='Entrar' />
 </form>
 </div>
 </body>
@@ -404,7 +404,7 @@ session_start();
 if (isset($_REQUEST['logout']))
 {
 	session_destroy();
-	login_form("Successfully logged out.");
+	login_form("Sesión terminada.");
 }
 //non-js
 else if (isset($_REQUEST['pass']))
