@@ -109,7 +109,7 @@ div.schedule div.new {
 	border:1px solid #999999;
 	text-align:center;
 	vertical-align:center;
-	margin:15px 0px 0px 100px;
+	margin:15px 0px 0px 0px;
 }
 div.schedule div.new a {
 	width:100%;
@@ -152,7 +152,7 @@ ul {
 	vertical-align:middle;
 }
 div.schedules, div.new_schedule {
-	margin:0px 100px 0px 0px;
+	margin:0px 100px 0px 100px;
 }
 td.middle_horizontal {
 	width:50px;
