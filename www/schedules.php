@@ -53,9 +53,9 @@ foreach ($xml->schedules->schedule as $schedule) {
 $total = count($schedules);
 
 function add_time($id, $key, $hour, $minute, $sep="'") {
-	echo "<div class=\"time\" id=\"time_${id}_${key}\"><span title=\"Rearrange\">::</span>";
+	echo "<div class=\"time\" id=\"time_${id}_${key}\"><span title=\"Reordenar\">::</span>";
 	time_select("[$id][$key]", $hour, $minute);
-	echo " <a href=\"javascript:void(0)\" onclick=\"return remove_time($sep$id$sep, $sep$key$sep)\" title=\"Delete\">x</a></div>";
+	echo " <a href=\"javascript:void(0)\" onclick=\"return remove_time($sep$id$sep, $sep$key$sep)\" title=\"Borrar\">x</a></div>";
 }
 
 ?>
@@ -226,7 +226,7 @@ for ($q=0; $q < $total; ++$q) {
 	echo <<<EOF
 <div class='schedule' id='schedule_$id'>
 	<div class="name">
-		<input type="text" name="name[$id]" value="$name" onchange="window.needToConfirm=true" /> <a href="javascript:void(0)" onclick="return remove_schedule('$id')" title="Delete this schedule">x</a>
+		<input type="text" name="name[$id]" value="$name" onchange="window.needToConfirm=true" /> <a href="javascript:void(0)" onclick="return remove_schedule('$id')" title="Borrar este horario">x</a>
 	</div>
 	<div class="times">
 	<ul id="sortable_$id">
@@ -239,13 +239,13 @@ EOF;
 	}
 echo <<<EOF
 	</ul>
-	<div class="new"><a href="javascript:void(0)" onclick="return add_time('$id')" title="Add a time to this schedule">+</a></div>
+	<div class="new"><a href="javascript:void(0)" onclick="return add_time('$id')" title="Agregar una hora al horario">+</a></div>
 	</div>
 </div>
 EOF;
 }
 ?>
 </div>
-<div class="new_schedule"><div class="schedule" id='new_schedule'><a href="javascript:void(0)" onclick="return add_schedule()" title="Create a new schedule">+</a></div></div>
+<div class="new_schedule"><div class="schedule" id='new_schedule'><a href="javascript:void(0)" onclick="return add_schedule()" title="Crear un nuevo horario">+</a></div></div>
 </form>
 <?php site_footer(); ?>
