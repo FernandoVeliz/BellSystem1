@@ -379,6 +379,24 @@ window.onload = function() {
 }
 </script>
 </head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css/all.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 0px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
 <body>
 <h2>Login - Jardín de niños</h2>
 <?php echo $note; ?>
