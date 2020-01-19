@@ -256,7 +256,7 @@ echo <<<EOF
 	window.onbeforeunload = confirmExit;
 	function confirmExit()
 	{
-		if (window.needToConfirm) return "Are you sure you want to leave this page before saving?";
+		if (window.needToConfirm) return "Está seguro que desea salir de la página sin haber guardado?";
 	}
 	// -->
 	</script>
