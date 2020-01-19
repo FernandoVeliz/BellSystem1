@@ -40,7 +40,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="far fa-calendar-alt w3-xxlarge"></i>
     <p>CALENDARIO</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+  <a href="settings-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-sliders-h w3-xxlarge"></i>
     <p>OPCIONES</p>
   </a>
