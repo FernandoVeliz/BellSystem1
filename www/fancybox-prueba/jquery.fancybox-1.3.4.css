@@ -76,12 +76,12 @@
 #fancybox-content {
 	width: 0;
 	height: 0;
-	padding: 0;
+	padding: 10px;
 	outline: none;
 	position: relative;
 	overflow: hidden;
 	z-index: 1102;
-	border: 0px solid #fff;
+	#border: 0px solid #fff;
 }
 
 #fancybox-hide-sel-frame {
