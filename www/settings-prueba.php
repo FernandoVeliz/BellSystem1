@@ -136,7 +136,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fas fa-sliders-h w3-xxlarge"></i>
     <p>OPCIONES</p>
   </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <a href="backup-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-history w3-xxlarge"></i>
     <p>RESPALDO</p>
   </a>
@@ -154,30 +154,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Jardín de niños</span> Ninfa Gutiérrez de Solís</h1>
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-black">Control de timbre</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Bienvenido al interfaz del timbre. Se recomienda que visite cada una de las categorías en orden para configurar el timbre correctamente.</p><br>
-	<ul>
-	<li><b>Horarios</b> &mdash; Crea horarios que hacen sonar el timbre en una hora específica</li>
-	<li><b>Calendario</b>  &mdash; Configura cuándo se van a utilizar estos horarios</li>
-	<li><b>Opciones</b>  &mdash; Configura cuándo inicia/termina la escuela para activar el timbre</li>
-	<li><b>Respaldo</b>    &mdash; Respalda el archivo de configuración del timbre</li>
-	</ul>
-
-
-
-<!-- END PAGE CONTENT -->
 </div>
 
 </body>
