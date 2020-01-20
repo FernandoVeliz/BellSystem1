@@ -1,5 +1,5 @@
 <?php
-require_once "design.php";
+require_once "design-prueba.php";
 site_header("Calendar");
 
 //read quiets
@@ -12,7 +12,7 @@ function get_whens($whens)
 	foreach ($whens as $when)
 	{
 		$value = (string)$when;
-			
+
 		$summary = "";
 		$parts = explode("-", (string)$when);
 
@@ -95,7 +95,7 @@ if (isset($_REQUEST['save'])) {
 		$parts = explode("@", (string)$quiet);
 
 		$new = $xml->calendar->quiet->addChild("when", $parts[0]);
-		
+
 		if (count($parts) == 2)
 		{
 			$times = explode("-", $parts[1]);
@@ -109,7 +109,7 @@ if (isset($_REQUEST['save'])) {
 	}
 
 	$xml->calendar->addChild("override");
-	
+
 	foreach ($overrides as $override)
 	{
 		$exec_part = explode("#", (string)$override);
@@ -136,7 +136,7 @@ if (isset($_REQUEST['save'])) {
 
 		$new = $xml->calendar->override->addChild("when", $parts[0]);
 		$new["exec"] = $exec_part[0];
-		
+
 		if (count($parts) == 2)
 		{
 			$times = explode("-", $parts[1]);
@@ -241,7 +241,7 @@ function box_save() {
 	{
 		exec_value = exec.options[exec.selectedIndex].value
 		exec_text  = exec.options[exec.selectedIndex].text
-		
+
 		input = exec_value + "#"
 		text  = "<span>" + exec_text + "</span> &ndash; "
 	}
@@ -265,10 +265,10 @@ function box_save() {
 		input += "@" + time_start + "-" + time_end
 		text  += " from " + time_start + " - " + time_end
 	}
-	
+
 	document.getElementById(window.box_id).value               = input
 	document.getElementById(window.box_id + "_link").innerHTML = text
-	
+
 	close()
 
 	window.box_id   = -1
@@ -313,7 +313,7 @@ function box_open(input_id) {
 		hour_end     = end_parts[0]
 		minute_end   = end_parts[1]
 	}
-	
+
 	date_parts  = parts[0].split("-")
 	start       = date_parts[0].substr(0,4) + "/" + date_parts[0].substr(4,2) + "/" + date_parts[0].substr(6,2)
 
@@ -360,7 +360,7 @@ function print_date(slashes) {
 		month = "0" + month
 	if (day < 10)
 		day = "0" + day
-	
+
 	if (slashes)
 		return year + "/" + month + "/" + day
 	else
@@ -417,7 +417,7 @@ function add_quiet() {
 	})(id)
 	link.innerHTML = print_date(true)
 	link.title = "Haga click para modificar"
-	
+
 	$(link).fancybox({
 		'titlePosition'         : 'inside',
 		'transitionIn'          : 'none',
@@ -469,7 +469,7 @@ function add_override() {
 	})(id)
 	link.innerHTML = "<span>Horario no especificado</span> &ndash; " + print_date(true)
 	link.title = "Haga click para modificar"
-	
+
 	$(link).fancybox({
 		'titlePosition'         : 'inside',
 		'transitionIn'          : 'none',
@@ -482,7 +482,7 @@ function add_override() {
 
 window.onload = function() {
 <?php
-foreach ($quiets as $id => $quiet) 
+foreach ($quiets as $id => $quiet)
 {
 	echo "\t$(\"#quiet_${id}_link\").fancybox({
 		'titlePosition'         : 'inside',
@@ -492,7 +492,7 @@ foreach ($quiets as $id => $quiet)
 	});\n";
 }
 
-foreach ($overrides as $id => $override) 
+foreach ($overrides as $id => $override)
 {
 	echo "\t$(\"#override_${id}_link\").fancybox({
 		'titlePosition'         : 'inside',
@@ -532,12 +532,68 @@ foreach ($days_of_week as $key=>$dow)
 	echo "\t<option value=''>     </option>\n\t";
 	for ($i=0; $i<count($schedules); ++$i) {
 		$selected = ($defaults[$key] === $schedules[$i][0])?" selected=\"selected\"":"";
-		
+
 		echo "\t<option value='{$schedules[$i][0]}'$selected>{$schedules[$i][1]}</option>\n\t";
 	}
 	echo "</select></td>\n</tr>";
 }
 ?>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css/all.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 0px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-home w3-xxlarge"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="schedules.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="far fa-clock w3-xxlarge"></i>
+    <p>HORARIOS</p>
+  </a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-text-white">
+    <i class="far fa-calendar-alt w3-xxlarge"></i>
+    <p>CALENDARIO</p>
+  </a>
+  <a href="settings.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-sliders-h w3-xxlarge"></i>
+    <p>OPCIONES</p>
+  </a>
+    <a href="backup.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-history w3-xxlarge"></i>
+    <p>RESPALDO</p>
+  </a>
+      <a href="index.php?logout" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-door-open w3-xxlarge"></i>
+    <p>SALIR</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 </table>
 <br />
 
@@ -601,4 +657,5 @@ foreach ($days_of_week as $key=>$dow)
 	</div>
 </div>
 </form>
+</html>
 <?php site_footer(); ?>

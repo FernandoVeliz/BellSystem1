@@ -1,5 +1,5 @@
 <?php
-require_once "design.php";
+require_once "design-prueba.php";
 site_header("Schedules");
 
 $columns = 3;
@@ -43,7 +43,7 @@ foreach ($xml->schedules->schedule as $schedule) {
 	$id    = $schedule["id"];
 	$name  = $schedule["name"];
 	$times = array();
-	
+
 	foreach ($schedule->time as $time)
 		$times[] = $time;
 
@@ -183,7 +183,7 @@ function add_schedule() {
 	})(id)
 	remove.innerHTML = " x"
 	remove.title = "Borrar este horario"
-	
+
 	times = document.createElement('div')
 	schedule.appendChild(times)
 	times.className = "times"
@@ -248,4 +248,62 @@ EOF;
 </div>
 <div class="new_schedule"><div class="schedule" id='new_schedule'><a href="javascript:void(0)" onclick="return add_schedule()" title="Crear un nuevo horario">+</a></div></div>
 </form>
+
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css/all.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 0px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-home w3-xxlarge"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="schedules.php" class="w3-bar-item w3-button w3-padding-large w3-black w3-text-white">
+    <i class="far fa-clock w3-xxlarge"></i>
+    <p>HORARIOS</p>
+  </a>
+  <a href="calendar.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="far fa-calendar-alt w3-xxlarge"></i>
+    <p>CALENDARIO</p>
+  </a>
+  <a href="settings.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-sliders-h w3-xxlarge"></i>
+    <p>OPCIONES</p>
+  </a>
+    <a href="backup.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-history w3-xxlarge"></i>
+    <p>RESPALDO</p>
+  </a>
+      <a href="index.php?logout" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <i class="fas fa-door-open w3-xxlarge"></i>
+    <p>SALIR</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+</html>
 <?php site_footer(); ?>
