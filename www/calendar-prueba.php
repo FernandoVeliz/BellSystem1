@@ -541,7 +541,7 @@ foreach ($days_of_week as $key=>$dow)
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=1024">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="css/all.css">
@@ -559,11 +559,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <a href="index-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+  <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-home w3-xxlarge"></i>
     <p>INICIO</p>
   </a>
-  <a href="schedules-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+  <a href="schedules.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="far fa-clock w3-xxlarge"></i>
     <p>HORARIOS</p>
   </a>
@@ -571,15 +571,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="far fa-calendar-alt w3-xxlarge"></i>
     <p>CALENDARIO</p>
   </a>
-  <a href="settings-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+  <a href="settings.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-sliders-h w3-xxlarge"></i>
     <p>OPCIONES</p>
   </a>
-    <a href="backup-prueba.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+    <a href="backup.php" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-history w3-xxlarge"></i>
     <p>RESPALDO</p>
   </a>
-      <a href="index-prueba.php?logout" class="w3-bar-item w3-button w3-padding-large w3-text-white">
+      <a href="index.php?logout" class="w3-bar-item w3-button w3-padding-large w3-text-white">
     <i class="fas fa-door-open w3-xxlarge"></i>
     <p>SALIR</p>
   </a>
