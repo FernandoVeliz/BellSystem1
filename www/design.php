@@ -1,5 +1,5 @@
 <?php
-$name        = "Control de timbre";
+$name        = "Bell System";
 $root        = getcwd() . DIRECTORY_SEPARATOR;
 $menu_file   = $root . "menu.xml";
 $config_file = $root . "config.xml";
@@ -11,13 +11,13 @@ define("max_minutes", 59);
 define("bell_session", "bell_system_2011");
 
 $days_of_week = array(
-	"Domingo",
-	"Lunes",
-	"Martes",
-	"Miércoles",
-	"Jueves",
-	"Sábado",
-	"Domingo"
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
 );
 
 function config_load()
@@ -135,9 +135,9 @@ EOF;
 
 function saved($bool)
 {
-	echo '<input type="submit" name="save" class="save" value="Guardar" onclick="window.needToConfirm=false" />';
-	if ($bool) echo "<div class='saved' id='saved'>Guardado exitosamente</div>";
-	else	   echo "<div class='saved' id='saved' style=\"display:none\">Guardado exitosamente</div>";
+	echo '<input type="submit" name="save" class="save" value="Save" onclick="window.needToConfirm=false" />';
+	if ($bool) echo "<div class='saved' id='saved'>Successfully Saved</div>";
+	else	   echo "<div class='saved' id='saved' style=\"display:none\">Successfully Saved</div>";
 }
 
 function time_select($str="", $hour=-1, $minute=-1) {
@@ -299,7 +299,7 @@ function login_form($note="") {
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login - Jardín de niños</title>
+<title>Login - Bell System</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 <script type="text/javascript" src="json2.js"></script>
 <script type="text/javascript" src="sha256.js"></script>
@@ -382,14 +382,14 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<h2>Login - Jardín de niños</h2>
+<h2>Bell System Login</h2>
 <?php echo $note; ?>
 <div id="replace"></div>
 <div id="login">
-<div style='color:#FF0000; display:none;' id='invalid'>Contraseña incorrecta<br /></div>
+<div style='color:#FF0000; display:none;' id='invalid'>Incorrect password.<br /></div>
 <form action='index.php' method='post' onsubmit='login(); return false'>
-Contraseña: <input type='password' name='pass' id='pass' />
-          <input type='submit' value='Entrar' />
+Password: <input type='password' name='pass' id='pass' />
+          <input type='submit' value='Login' />
 </form>
 </div>
 </body>
@@ -404,7 +404,7 @@ session_start();
 if (isset($_REQUEST['logout']))
 {
 	session_destroy();
-	login_form("Sesión terminada.");
+	login_form("Successfully logged out.");
 }
 //non-js
 else if (isset($_REQUEST['pass']))
