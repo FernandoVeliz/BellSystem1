@@ -15,8 +15,8 @@ $days_of_week = array(
 	"Martes",
 	"Miércoles",
 	"Jueves",
-	"Sábado",
-	"Domingo"
+	"Viernes",
+	"Sábado"
 );
 
 function config_load()
